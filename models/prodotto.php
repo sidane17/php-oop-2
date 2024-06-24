@@ -1,10 +1,10 @@
 <?php
 include __DIR__ . "/models/categoria.php";
 class Prodotto {
-    protected $titolo;
-    protected $prezzo;
-    protected $immagine;
-    protected $categoria;
+    public $titolo;
+    public $prezzo;
+    public $immagine;
+    public $categoria;
 
     public function __construct($titolo, $prezzo, $immagine, $categoria) {
         $this->titolo = $titolo;
