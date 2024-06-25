@@ -1,5 +1,5 @@
 <?php
-include __DIR__ . "/models/categoria.php";
+include_once __DIR__ . "/categoria.php";
 class Prodotto {
     public $titolo;
     public $prezzo;
@@ -30,6 +30,6 @@ class Prodotto {
     }
 
     public function __toString() {
-        return "Prodotto: $this->titolo, Prezzo: $this->prezzo, Categoria: " . $this->categoria->getNome();
+        return "$this->titolo,$this->prezzo," . $this->categoria->getNome();
     }
 }
